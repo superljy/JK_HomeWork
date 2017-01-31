@@ -1,0 +1,62 @@
+/*定义背景，字体*/
+
+body {
+    background-color: #eee;
+    font-family: "微软雅黑";
+}
+
+.container{
+	margin: 0 -15px;
+}
+
+/*登录主框体*/
+
+.login_box {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin-top: -200px;
+    position: absolute;
+    top: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    .login_box {
+        left: 50%;
+        margin-left: -250px;
+    }
+}
+
+
+/*登录标题*/
+
+.login_title {
+    height: 80px;
+    background-color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.login_title h1 {
+    margin-top: 0;
+    padding: 27px;
+    line-height: 0.5;
+}
+
+.login_title h1 small{
+	color: #fff;
+}
+
+/*登陆主体，用户名 密码输入*/
+.login_body .form {
+    margin: 50px 10px;
+    max-width: 480px;
+}
+
+.login_body .form .btn {
+    margin-top: 50px;
+    width: 100px;
+    font-size: 18px;
+}

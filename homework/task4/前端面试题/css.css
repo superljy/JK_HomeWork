@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*页面字体属性*/
+html,
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    background-color: #ddd;
+    overflow: scroll;
+}
+
+
+/*首页父div*/
+
+.wrapper {
+    background: url(./img/bg_cat.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 900px;
+    min-height: 1000px;
+    border-radius: 10px;
+}
+
+
+/*header*/
+/*标题属性*/
+header .tittle {
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .line {
+    width: 900px;
+    height: 105px;
+    background: url(./img/line.jpg) no-repeat;
+}
+
+
+/*article*/
+/*正文部分父元素定位*/
+article .main {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*正文内容属性*/
+.main .link div {
+    width: 288px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #EE82EE;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+    overflow: hidden;
+}
+/*去除a标签下划线*/
+.main .link a {
+    text-decoration: none;
+}
+/*鼠标移过效果*/
+.main .link div:hover{
+    background: #F482C7;
+}
+
+/*footer*/

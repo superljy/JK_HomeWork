@@ -1,0 +1,84 @@
+/*顶部导航栏样式*/
+
+
+/*背景颜色*/
+
+.navbar-default {
+    background-color: #000;
+}
+
+
+/*左侧顶部字体样式*/
+
+.brand {
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+.first {
+    position: absolute;
+    margin: 10px 0 10px 20px;
+    font-size: 18px;
+}
+
+
+/*右侧链接样式*/
+
+.nav li a {
+    padding: 14px 15px;
+    font-size: 18px;
+}
+
+.nav li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+/*正文部分  */
+/*左边栏*/
+.sidebar .sidebar-header{
+    background-color: #ddd;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 2;
+    padding-left: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.sidebar li {
+    list-style: none;
+}
+
+.sidebar .list{
+    border:1px solid #ddd;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*右边内容栏*/
+.content-bar{
+    background-color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    border:1px solid #000;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content-body{
+    text-align: center;
+    font-size: 25px;
+}
