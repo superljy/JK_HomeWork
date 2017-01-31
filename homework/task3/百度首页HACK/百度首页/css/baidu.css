@@ -1,0 +1,333 @@
+html,
+body {
+    height: 100%;
+}
+
+
+/*导航*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px arial;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 810px;
+    min-height: 650px;
+    height: 100%;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 140px 0 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333333;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*设置下拉菜单*/
+
+.setting_menu {
+    position: absolute;
+    width: 48px;
+    height: 24px;
+    right: 72px;
+    text-align: center;
+}
+
+.setting_menu a {
+    text-decoration: none;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.setting_menu .baidu_menu {
+    position: absolute;
+    width: 60px;
+    top: 25px;
+    left: -15px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+
+.setting_menu:hover .baidu_menu {
+    display: block;
+}
+
+.setting_menu .baidu_menu a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    font-weight: lighter;
+}
+
+.setting_menu .baidu_menu a:hover {
+    color: #fff;
+    cursor: pointer;
+    background: #3385ff;
+}
+
+.setting_menu .setting_icon {
+    position: absolute;
+    top: -11px;
+    left: 25px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+
+/*更多产品图标*/
+
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background-color: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+header nav .more:hover {
+    color: #fff;
+}
+/*更多产品侧边栏*/
+/*已完成 伪类实现方法待查询*/
+
+.more_product{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-height: 600px;
+    width: 75px;
+    border-left:1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+    z-index: 999;
+    text-align: center;
+}
+
+.more_product:hover{
+    display: block;
+}
+
+.more_product ul{
+    padding:10px 5px;
+}
+
+
+
+.more_product li{
+    position: relative;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.more_product a{
+    color: #333;
+    text-decoration: none;
+}
+
+.more_product a:hover{
+    text-decoration: underline;
+}
+
+.more_product span{
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 10px auto 5px;
+}
+
+.more_product .more_product_btn{
+    height: 25px;
+}
+
+.more_product .more_img_one{
+    background: url(../img/bdbri_icons.png) 0 0 no-repeat;
+}
+
+.more_product .more_img_two{
+    background: url(../img/bdbri_icons.png) -36px 0 no-repeat;
+}
+
+.more_product .more_img_three{
+    background: url(../img/bdbri_icons.png) -74px 0 no-repeat;
+}
+
+.more_product .more_img_four{
+    background: url(../img/bdbri_icons.png) -112px 0 no-repeat;
+}
+
+.more_product .more_img_five{
+    background: url(../img/bdbri_icons.png) -147px 0 no-repeat;
+}
+
+.more_product .all_product{
+    margin: 10px auto;
+    border-bottom: none;
+}
+
+/*主体*/
+
+.content {
+    position: relative;
+    top: 38.2%;
+    text-align: center;
+}
+
+
+/*百度图片设置*/
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*搜索框设置*/
+
+.content .search-form {
+    position: relative;
+    top: -191px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    padding: 0;
+    border-right-width: 0;
+    margin-right: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    margin: -5px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317ef3;
+}
+
+
+/*搜索栏小相机图标设置*/
+
+.content .icon {
+    position: relative;
+}
+
+.content .icon_cam {
+    position: absolute;
+    display: inline-block;
+    top: 1px;
+    right: 105px;
+    height: 16px;
+    width: 18px;
+    background: url(../img/camera.png) 0px 0px no-repeat;
+    cursor: pointer;
+}
+
+.content .icon_cam:hover {
+    background: url(../img/camera.png) 0px -20px no-repeat;
+}
+
+
+/*底部*/
+
+footer {
+    position: absolute;
+    bottom: 44px;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #00c;
+}
+
+footer p a:hover {
+    color: #00c;
+}
+
+footer .copy_right a {
+    color: #666;
+}
+
+footer .copy_right a:hover {
+    color: #666;
+}
+
+footer .icon_c {
+    position: relative;
+}
+
+footer .icon_copyright {
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: -3px;
+    width: 14px;
+    height: 17px;
+    background: url(../img/copyright.png) no-repeat;
+}

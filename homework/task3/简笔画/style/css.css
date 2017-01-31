@@ -1,0 +1,78 @@
+/*通用主体*/
+
+div {
+    width: 500px;
+    height: 400px;
+    background-color: red;
+    border: 5px solid;
+    margin: -200px 0px 0px -250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*苹果主体*/
+
+.mainer {
+    border: 0;
+    border-top-left-radius: 47%;
+    border-top-right-radius: 47%;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+}
+
+
+/*苹果芯弧线*/
+
+.inner {
+    width: 80px;
+    height: 0px;
+    background-color: black;
+    position: relative;
+    left: 460px;
+    top: 245px;
+    border-radius: 80%;
+}
+
+
+/*苹果芯*/
+
+.inner1 {
+    width: 0px;
+    height: 100px;
+    position: relative;
+    left: 500px;
+    top: 325px;
+}
+
+
+/*叶子*/
+
+.leaf {
+    width: 300px;
+    height: 20px;
+    background-color: green;
+    border: 0;
+    border-radius: 100%;
+    position: relative;
+    top: 405px;
+    left: 200px;
+    transform-origin: right top;
+    -webkit-animation:leaf 4s linear infinite;
+    -moz-animation:leaf 4s linear infinite;
+}
+@-webkit-keyframes leaf{
+	0%{-webkit-transform:rotate(5deg);}
+	25%{-webkit-transform:rotate(-5deg);}
+	50%{-webkit-transform:rotate(5deg);}
+	75%{-webkit-transform:rotate(-5deg);}
+	100%{-webkit-transform:rotate(5deg);}
+}
+@-moz-keyframes leaf{
+    0%{-moz-transform:rotate(5deg);}
+    25%{-moz-transform:rotate(-5deg);}
+    50%{-moz-transform:rotate(5deg);}
+    75%{-moz-transform:rotate(-5deg);}
+    100%{-moz-transform:rotate(5deg);}
+}

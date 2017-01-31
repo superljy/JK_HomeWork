@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*标题*/
+
+h1 {
+    font-family: "微软雅黑";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/*大容器*/
+
+.mainer {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.box div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 5%;
+}
+
+
+/*每一面的位置*/
+
+.box .one {
+    transform: translateZ(150px);
+    background-color: #DB7093;
+}
+
+.box .two {
+    transform: rotateX(-90deg) translateZ(150px);
+    background-color: #7B68EE;
+}
+
+.box .three {
+    transform: rotateX(90deg) translateZ(150px);
+    background-color: #FF0000;
+}
+
+.box .four {
+    transform: rotateZ(180deg) rotateY(180deg) translateZ(150px);
+    background-color: #1564FF;
+}
+
+.box .five {
+    transform: rotateY(-90deg) translateZ(150px);
+    background-color: #15FF31;
+}
+
+.box .six {
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: #1F644F;
+}
+
+
+/*每面小块*/
+
+.one div,
+.two div,
+.three div,
+.four div,
+.five div,
+.six div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 10%;
+    border: 1px solid #000;
+}
+
+
+/*小块位置*/
+
+.box div div:nth-child(1) {}
+
+.box div div:nth-child(2) {
+    left: 100px;
+}
+
+.box div div:nth-child(3) {
+    left: 200px;
+}
+
+.box div div:nth-child(4) {
+    top: 100px;
+}
+
+.box div div:nth-child(5) {
+    top: 100px;
+    left: 100px;
+}
+
+.box div div:nth-child(6) {
+    top: 100px;
+    left: 200px;
+}
+
+.box div div:nth-child(7) {
+    top: 200px;
+}
+
+.box div div:nth-child(8) {
+    top: 200px;
+    left: 100px;
+}
+
+.box div div:nth-child(9) {
+    top: 200px;
+    left: 200px;
+}
+
+
+/*3d旋转*/
+
+.rotate {
+    transform-style: preserve-3d;
+    animation: gorotate 20s infinite;
+    transform-origin: 150px 150px 0px;
+}
+
+@keyframes gorotate {
+    15% {
+        transform: rotateY(-135deg);
+    }
+    30% {
+        transform: rotateY(-90deg)rotateZ(135deg);
+    }
+    45% {
+        transform: rotateY(225deg)rotateZ(135deg);
+    }
+    60% {
+        transform: rotateY(135deg)rotateX(135deg);
+    }
+    75% {
+        transform: rotateX(135deg)rotateY(225deg);
+    }
+    90% {
+        transform: rotateX(-135deg);
+    }
+}

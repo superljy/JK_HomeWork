@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*头部*/
+
+.header {
+    background-color: #F5F5DC;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    overflow: hidden;
+}
+
+
+/*正文部分*/
+
+.article {
+    background-color: #F4A460;
+    height: 500px;
+    overflow: hidden;
+    /*左分栏*/
+}
+
+.left {
+    background-color: #F08080;
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    text-align: center;
+    line-height: 500px;
+    overflow: hidden;
+}
+
+
+/*中间栏*/
+
+.middle {
+    background-color: #FF69B4;
+    float: left;
+    width: 100%;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    height: 500px;
+    display: table;
+}
+
+
+/*中间栏文字部分*/
+
+.inside {
+    margin: 0px 200px 0px 200px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/*右分栏*/
+
+.right {
+    background-color: #AFEEEE;
+    width: 200px;
+    float: left;
+    margin-left: -200px;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    text-align: center;
+    line-height: 500px;
+    overflow: hidden;
+}
+
+
+/*脚部*/
+
+.footer {
+    background-color: #8A2BE2;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    overflow: hidden;
+}
