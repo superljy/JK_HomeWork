@@ -1,0 +1,78 @@
+/*父级div*/
+
+.body_main {
+    width: 310px;
+    height: 310px;
+    margin: -155px 0 0 -155px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*上方div*/
+
+.top {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 5px 105px;
+    background: #FF6347;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*左方div*/
+
+.left {
+    width: 100px;
+    height: 100px;
+    background: #FF1493;
+    margin-right: 5px;
+    float: left;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*中间div*/
+
+.middle {
+    width: 100px;
+    height: 100px;
+    background: #F0FFF0;
+    float: left;
+}
+
+
+/*中间24*24小图片*/
+
+.img {
+    margin: -12px 0 0 -12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*右方div*/
+
+.right {
+    width: 100px;
+    height: 100px;
+    background: #AFEEEE;
+    margin-left: 5px;
+    float: left;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*下方div*/
+
+.bottom {
+    width: 100px;
+    height: 100px;
+    background: #00BFFF;
+    margin-top: 5px;
+    float: left;
+    margin-left: 105px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+}

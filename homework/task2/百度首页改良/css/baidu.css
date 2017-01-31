@@ -1,0 +1,80 @@
+/*导航*/
+
+header {
+    overflow: hidden;
+}
+
+nav {
+    width: 500px;
+    float: right;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+header nav a {
+    margin-left: 10px;
+    color: #333333;
+}
+
+ul {
+    display: none;
+}
+
+a.set:hover ul {
+    display: block;
+}
+
+.list {
+    border: 0;
+    margin-left: 19px;
+    height: 25px;
+    width: 60px;
+    background: #317ef3;
+    color: #ffffff;
+}
+
+a.list:hover ul{
+    display: block;
+}
+
+
+/*主体*/
+
+.content {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.content input {
+    width: 520px;
+    height: 35px;
+}
+
+.content button {
+    width: 100px;
+    height: 40px;
+}
+
+.content img {
+    width: 300px;
+    height: 139px;
+}
+
+.bg {
+    margin-left: 0px;
+    background: #317ef3;
+    color: white;
+    font-size: 15px;
+}
+
+
+/*底部*/
+
+footer {
+    padding-top: 350px;
+}
+
+footer p {
+    text-align: center;
+}

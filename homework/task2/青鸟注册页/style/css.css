@@ -1,0 +1,90 @@
+/*背景颜色*/
+
+body {
+    background-color: #4682B4;
+}
+
+
+/*主体div*/
+
+.container {
+    margin: 15px auto;
+    width: 710px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+
+/*头部导航栏*/
+
+.header {
+    width: 710px;
+    height: 82px;
+}
+
+.logo {
+    width: 220px;
+    margin-left: 29px;
+    float: left;
+}
+
+.top_right {
+    margin: 50px 29px 10px 50px;
+    float: right;
+    width: 120px;
+    color: #ff0099;
+    font-size: 12px;
+}
+.top_right :hover {
+    color: #FF69B4;
+}
+
+/*中间正文输入部分*/
+
+.p_school {
+    display: inline-block;
+}
+
+.m_school {
+    display: inline-block;
+}
+
+.h_school {
+    display: inline-block;
+}
+
+.eng {
+    display: inline-block;
+}
+
+.other_lan {
+    display: inline-block;
+}
+
+.art {
+    display: inline-block;
+}
+
+.music {
+    display: inline-block;
+}
+
+.computer {
+    display: inline-block;
+}
+
+.pe {
+    display: inline-block;
+}
+
+.place {
+    display: inline-block;
+}
+
+
+/*页脚部分*/
+
+.footer {
+    text-align: center;
+    margin: 10px;
+}
