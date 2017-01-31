@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>分数等级查询</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .form {
+        width: 300px;
+        height: 200px;
+        margin-left: -150px;
+        margin-top: -100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    #score {
+        width: 80%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form>
+            <h3>请输入分数，以便查询分等情况</h3>
+            <input type="text" id="score" autofocus="autofocus">
+            <input type="button" value="查询" onclick="level()">
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>

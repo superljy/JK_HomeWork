@@ -1,0 +1,169 @@
+/*全局*/
+body{
+	margin: 0;
+	padding: 0;
+	font:14px "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+	margin-bottom: 15px;
+}
+/*头部*/
+/*左边logo*/
+header{
+	background-color: #fcfcfc;
+	border-bottom:1px solid #ccc;
+}
+.header{
+	height: 61px;
+	width: 1190px;
+	position: relative;
+	z-index: 100;
+	margin: 0 auto;
+}
+.header .logo{
+	float: left;
+	width: 168px;
+	height: 60px;
+	margin-right: 24px;
+}
+.header .logo a{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*右边导航*/
+.header .nav{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+}
+.header .nav a{
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+	padding-right: 9px;
+}
+
+.header .nav a:hover{
+	background-color: #f7f7f7;
+}
+
+/*搜索栏*/
+
+.search{
+	height: 82px;
+	width: 1190px;
+	margin: 0 auto;
+}
+.search .search-bar{
+	width: 800px;
+	height: 41px;
+	padding: 27px 0 0 166px;
+}
+.search .search-form{
+	width: 538px;
+	height: 44px;
+	margin: 0 auto;
+}
+.search .search-form .input-bar{
+	width: 448px;
+	height: 32px;
+	font-size: 18px;
+}
+.search .search-form .search-btn{
+	width: 85px;
+	height: 39px;
+	margin-left: -5px;
+	cursor: pointer;
+}
+
+/*正文主体*/
+.body{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.body .body-menu{
+	width: 1190px;
+	height: 38px;
+	border:2px solid #099e6a;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fcfcfc;
+	border-left: 0;
+	border-right: 0;
+	position: relative;
+	margin-bottom: 10px;
+}
+.body .body-menu .menu{
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+.body .body-menu .menu:hover{
+	color: #099e6a;
+}
+
+.body .body-menu .index{
+	width: 81px;
+	background-color: #0aa770;
+	border-right: 1px solid #eee;
+}
+.body .body-menu .index:hover{
+	color: #fff;
+}
+.body .body-menu .tv,
+.body .body-menu .movie,
+.body .body-menu .news,
+.body .body-menu .show,
+.body .body-menu .army,
+.body .body-menu .hot-games,
+.body .body-menu .games,
+.body .body-menu .outlet,
+.body .body-menu .travel,
+.body .body-menu .city{
+	width: 109px;
+	border-right: 1px solid #eee;
+}
+
+.body-content{
+	width: 1190px;
+	height: 100%;
+}
+.body-content .left-side{
+	display: inline-block;
+	width: 300px;
+	border:1px solid #ccc;
+	margin-right: 10px;
+	position: relative;
+}
+.body-content .right-side{
+	display: inline-block;
+	width: 877px;
+	border:1px solid #ccc;
+	position: absolute;
+}
+
+.body-content ul{
+	float: left;
+	padding-right: 30px;
+}
+
+.body-content .left-side ul{
+	padding: 0 31px;
+}
+
+.body-content ul a{
+	color: #000;
+}
+
+.body-content ul a:hover{
+	color: #099e6a;
+}

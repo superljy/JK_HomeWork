@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>找出最多的字母</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //找出以下字符串中出现最多的字符
+    var arr = "axbdmakmpja";
+    var obj = {};
+    for (var i = 0; i < arr.length; i++) {
+        var j = arr.charAt(i);
+        if (obj[j]) {
+            obj[j]++;
+        } else {
+            obj[j] = 1;
+        }
+    }
+    var k = 0;
+    var m = null;
+    for (var j in obj) {
+        if (obj[j] > k) {
+            k = obj[j];
+            m = j
+        }
+    }
+    //找位置
+    var position = [];
+    var pos = arr.indexOf(m.toString());
+    //console.log(pos);
+
+    while (pos > -1) {
+        position.push(pos);
+        pos = arr.indexOf(m, pos + 1);
+    }
+    alert("出现最多的是:" + m + "次数:" + k + "位置分别是:" + position);
+    </script>
+</body>
+
+</html>

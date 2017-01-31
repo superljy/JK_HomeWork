@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="./styles/index.css"></head>
+
+<body>
+    <div class="calculator">
+        <header>
+            <div class="logo">
+                <span>计算器</span>
+            </div>
+            <div class="screen">
+                <input type="text" id="screenName" readonly="true">
+            </div>
+        </header>
+        <article>
+            <div class="keys">
+            <!-- 一排 -->
+                <input type="button" id="7" value="7" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="8" value="8" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="9" value="9" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="back" value="back" class="buttons" onclick="inputTool(this)">
+                <input type="button" id="C" value="C" class="buttons" onclick="inputTool(this)">
+            <!-- 二排 -->
+                <input type="button" id="4" value="4" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="5" value="5" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="6" value="6" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="*" value="*" class="buttons" onclick="inputOper(this)">
+                <input type="button" id="/" value="/" class="buttons" onclick="inputOper(this)">
+            <!-- 第三排 -->
+                <input type="button" id="1" value="1" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="2" value="2" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="3" value="3" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="+" value="+" class="buttons" onclick="inputOper(this)">
+                <input type="button" id="-" value="-" class="buttons" onclick="inputOper(this)">
+            <!-- 第四排 -->
+                <input type="button" id="0" value="0" class="buttons" onclick="inputNum(this)">
+                <input type="button" id="." value="." class="buttons" onclick="inputNum(this)">
+                <input type="button" id="sin" value="sin" class="buttons" onclick="inputOper(this)">
+                <input type="button" id="cos" value="cos" class="buttons" onclick="inputOper(this)">
+                <input type="button" id="=" value="=" class="buttons" onclick="eva(this)">
+            </div>
+        </article>
+        <footer>
+            <span class="copyright">
+                感谢使用本计算器
+            </span>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

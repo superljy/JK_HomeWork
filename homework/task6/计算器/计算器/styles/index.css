@@ -1,0 +1,71 @@
+/*全局*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8080C0;
+    font: 14px "微软雅黑";
+    height: 100%;
+}
+
+
+/*计算器容器*/
+
+.calculator {
+    margin: 150px auto;
+    width: 315px;
+    height: 400px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #8e8e8e;
+}
+
+
+/*计算器头部及显示屏*/
+
+header .logo {
+    height: 20px;
+    text-align: center;
+    margin: 15px;
+}
+
+header .logo span {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+header .screen {
+    padding: 5px;
+}
+
+header .screen input {
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    font-size: 18px;
+}
+
+
+/*计算器按键*/
+.keys{
+    border: 1px solid #eee;
+    margin-top: 25px;
+    height: 223px;
+    padding: 8px;
+}
+
+.keys .buttons{
+    float: left;
+    text-align: center;
+    width: 42px;
+    height: 36px;
+    margin: 4px 9px 20px 8px;
+}
+
+/*底部信息*/
+footer{
+    text-align: center;
+}
+footer .copyright{
+    font-size: 18px;
+}

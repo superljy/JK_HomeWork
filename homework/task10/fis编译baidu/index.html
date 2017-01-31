@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="img/icon.ico"/>
+    <link rel="stylesheet" href="css/baidu.css" />
+    <title>百度一下,你就知道</title>
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div class="wrapper">
+        <!-- PC端 -->
+        <header>
+            <div class="header-menu">
+                <div class="weather-wrap">
+                    <span class="location">广州:</span>
+                    <span class="weather-icon"></span>
+                    <span class="tempeture"></span>
+                </div>
+                <div class="skin">
+                    <span class="skinin"><a href="#">换肤</a></span>
+                </div>
+            </div>
+            <nav>
+                <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="http://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="http://tieba.baidu.com/">贴吧</a>
+                <!-- 用户下拉菜单 -->
+                <div class="acc_menu">
+                    <a href="#">abc123</a>
+                    <div class="baidu_acc">
+                        <span class="acc_icon"></span>
+                        <a href="#">我的VIP</a>
+                        <a href="#">个人中心</a>
+                        <a href="#">账户设置</a>
+                        <a href="#">意见反馈</a>
+                        <a href="#">退出</a>
+                    </div>
+                </div>
+                <!-- 设置下拉菜单 -->
+                <div class="setting_menu">
+                    <a href="#">设置 </a>
+                    <div class="baidu_menu">
+                        <span class="setting_icon"></span>
+                        <a href="#">搜索设置</a>
+                        <a href="#">高级搜索</a>
+                        <a href="#">关闭预测</a>
+                        <a href="#">搜索历史</a>
+                    </div>
+                </div>
+                <a href="javascript:;" id="navMore" class="more">更多产品</a>
+            </nav>
+            <!-- 换肤 -->
+            <div class="skin-border">
+                <div class="skin-body">
+                    <ul>
+                        <li><a href="#"><img src="./img/827.jpg"></a></li>
+                        <li><a href="#"><img src="./img/827.jpg"></a></li>
+                        <li><a href="#"><img src="./img/827.jpg"></a></li>
+                        <li><a href="#"><img src="./img/827.jpg"></a></li>
+                        <li><a href="#"><img src="./img/827.jpg"></a></li>
+                        <li><a href="#" class="noSkin">不使用皮肤</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 移动端 -->
+        <div class="mobile-header">
+            <div class="weather">
+                <div class="weather-outline">
+                    <!-- <div class="icon-weather"></div> -->
+                    <div class="weather-num">22°</div>
+                    <div class="weather-status">
+                        <p>广州</p>
+                        <p>空气&nbsp;30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 更多产品侧边栏 -->
+        <div class="more_product" id="moreProduct">
+            <ul>
+                <li class="more_product_btn">
+                    <a href="javascript:;">更多产品</a>
+                </li>
+                <li>
+                    <a href=""><span class="more_img_one"></span>音乐</a>
+                </li>
+                <li>
+                    <a href=""><span class="more_img_two"></span>图片</a>
+                </li>
+                <li>
+                    <a href=""><span class="more_img_three"></span>知道</a>
+                </li>
+                <li>
+                    <a href=""><span class="more_img_four"></span>文库</a>
+                </li>
+                <li>
+                    <a href=""><span class="more_img_five"></span>风云榜</a>
+                </li>
+                <li class="all_product">
+                    <a href="">全部产品>></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 主体部分 -->
+        <!-- PC端 -->
+        <div class="content">
+            <img src="img/bd_logo1.png" alt="百度一下">
+            <div class="search-form">
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <span class="icon">
+                        <input class="search-input" type="text" name="wd" autofocus="autofocus">
+                        <button class="search-btn" type="submit">百度一下</button>
+                        <span class="icon_cam"></span>
+                    </span>
+                </form>
+            </div>
+            <div class="mainer">
+                <ul class="mainUl">
+                    <span class="myIcon"></span>
+                    <li class="tabIn">我的关注</li>
+                    <li>推荐</li>
+                    <li>导航</li>
+                    <li>视频</li>
+                    <li>购物</li>
+                </ul>
+                <div class="tabMainer">
+                    <div class="tabContent"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端 -->
+        <div class="mobile-content">
+            <img src="img/bd_logo1.png" alt="百度一下">
+            <div class="search-form">
+                <form action="https://www.baidu.com/s" method="get" target="_blank">
+                    <span class="icon">
+                        <input class="search-input" type="text" name="wd" autofocus="autofocus">
+                        <button class="search-btn" type="submit">百度一下</button>
+                        <span class="icon_cam"></span>
+                        <span class="icon_tri"></span>
+                    </span>
+                </form>
+            </div>
+            <div class="mobile-nav">
+                <div class="mn-swipe">
+                    <div class="mn-swipe-item">
+                        <a href="#" class="mn-item">
+                            <i class="mn-focus mn-icon"></i>
+                            <span class="mn-text">关注</span>
+                        </a>
+                        <a href="#" class="mn-item">
+                            <i class="mn-news mn-icon"></i>
+                            <span class="mn-text">新闻</span>
+                        </a>
+                        <a href="#" class="mn-item">
+                            <i class="mn-novel mn-icon"></i>
+                            <span class="mn-text">小说</span>
+                        </a>
+                        <a href="#" class="mn-item">
+                            <i class="mn-video mn-icon"></i>
+                            <span class="mn-text">视频</span>
+                        </a>
+                        <a href="#" class="mn-item">
+                            <i class="mn-life mn-icon"></i>
+                            <span class="mn-text">糯米</span>
+                        </a>
+                        <a href="#" class="mn-item">
+                            <i class="mn-map mn-icon"></i>
+                            <span class="mn-text">地图</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-news">
+                <div class="mnews-wrap">
+                    <div class="mnews">
+                        <a href="#">
+                            <div class="news-text">
+                                <h2>土豪花6亿买下这枯死木头,众人看了浑身直哆嗦!</h2>
+                            </div>
+                            <div class="news-img">
+                                <div class="img-wrap">
+                                    <img src="./img/1.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/2.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/3.jpeg">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mnews">
+                        <a href="#">
+                            <div class="news-text">
+                                <h2>土豪花6亿买下这枯死木头,众人看了浑身直哆嗦!</h2>
+                            </div>
+                            <div class="news-img">
+                                <div class="img-wrap">
+                                    <img src="./img/1.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/2.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/3.jpeg">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mnews">
+                        <a href="#">
+                            <div class="news-text">
+                                <h2>土豪花6亿买下这枯死木头,众人看了浑身直哆嗦!</h2>
+                            </div>
+                            <div class="news-img">
+                                <div class="img-wrap">
+                                    <img src="./img/1.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/2.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/3.jpeg">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mnews">
+                        <a href="#">
+                            <div class="news-text">
+                                <h2>土豪花6亿买下这枯死木头,众人看了浑身直哆嗦!</h2>
+                            </div>
+                            <div class="news-img">
+                                <div class="img-wrap">
+                                    <img src="./img/1.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/2.jpeg">
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="./img/3.jpeg">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部页脚-->
+        <!-- PC -->
+        <div class="footer">
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/">About Baidu</a>
+                <a href="http://e.baidu.com/?refer=888">百度推广</a>
+            </p>
+            <p class="copy_right">
+                <span>©2016&nbsp;Baidu</span>
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span class="icon_c">京ICP证030173号
+                    <span class="icon_copyright"></span>
+                </span>
+            </p>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if IE]>
+        <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+</body>
+
+</html>

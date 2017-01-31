@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*头部*/
+.header{
+	height: 100px;
+}
+.search-form{
+	width: 600px;
+	height: 100px;
+	margin-left: 30px;
+}
+.search-form img{
+	float: left;
+	width: 150px;
+}
+.search-form form{
+	position: relative;
+}
+.search-form .search-input{
+	position: absolute;
+	width: 340px;
+	height: 25px;
+	top: 35px;
+	left: 140px;
+	border-right-width: 0;
+    margin-right: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+.search-form .search-btn{
+	position: absolute;
+	width: 100px;
+	height: 31px;
+	top: 35px;
+	left: 482px;
+	color: #fff;
+	font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*图片外部容器*/
+.wrapper{
+	position: relative;
+}
+.box{
+	position: relative;
+	float: left;
+}
+/*图片内容容器*/
+.content{
+	padding: 5px;
+	border:2px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+
+.content img{
+	width: 300px;
+	height: auto;
+
+}

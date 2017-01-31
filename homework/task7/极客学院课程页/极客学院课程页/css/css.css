@@ -1,0 +1,974 @@
+h1,h2,h3,h4,h5,h6,div,dl,dt,dd,a,i,input,img,li,span,ul,p{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol ul {
+    list-style: none;
+}
+
+
+/*头部*/
+
+.header {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+}
+
+.header-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 60px;
+    height: 60px;
+    position: relative;
+}
+
+
+/*logo*/
+
+.header .logo {
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+}
+
+.header .logo img {
+    float: left;
+    margin-top: 10px;
+    width: 109px;
+    height: 40px;
+}
+
+
+/*nav*/
+
+.header nav .header-nav {
+    margin: 0;
+}
+
+.header nav {
+    height: 60px;
+    display: inline-block;
+    float: left;
+}
+
+.header nav li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+    z-index: 500;
+}
+
+.header nav a {
+    color: #333;
+}
+
+.header nav a:hover {
+    color: #35b558;
+}
+
+.header nav li:hover {
+    color: #35b558;
+}
+
+
+/*.header nav li i .arrow-icon{
+	margin-bottom: 2px;
+}
+.arrow-icon{
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}*/
+
+.header nav .drop-down .drop-down-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+}
+
+.header .drop-down .drop-down-menu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.header .drop-down .drop-down-menu h3 {
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0 15px;
+    background-color: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.header nav .drop-down:hover .drop-down-menu {
+    display: block;
+}
+
+
+/*nav end*/
+
+
+/*login*/
+
+.login-box {
+    float: right;
+    width: 200px;
+    height: 60px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.header .login-box span {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header .login-box .search-icon {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+    background: url(../img/search-icon.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+.searchBox{
+    width: 850px;
+    height: 59px;
+    line-height: 59px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.searchBox .close-icon{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url(../img/close-icon.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.searchBox .searchIcon{
+    width: 17px;
+    height: 17px;
+    background: url(../img/search-icon.png) no-repeat 0 0;
+    background-size: 17px 17px;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+.searchBox input{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.searchBox .tagBox{
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+
+.searchBox .tagBox a{
+    font-size: 12px;
+    color: #808080;
+    background-color: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+
+.header .login-box .app-icon {
+    background: url(../img/app-icon.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+    position: relative;
+}
+
+.app-icon .appmenu {
+    padding: 0;
+}
+
+.loginlist .appmenu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    width: 120px;
+    top: 44px;
+    right: -50px;
+    z-index: 1000;
+}
+.loginlist .appmenu img{
+    margin-top: 10px;
+}
+
+/*.header .login-box .loginlist .appmenu .top-icon{
+	display: block;
+	position: absolute;
+	top: -8px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	background-color: #fff;
+}*/
+
+.loginlist:hover .appmenu {
+    display: block;
+}
+
+.header .login-box .login-icon {
+    background: url(../img/login-icon.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+    position: relative;
+}
+
+.loginlist .appmenu dd {
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.loginlist .appmenu dd a {
+    color: #666;
+}
+
+.loginlist .appmenu dd a:hover {
+    color: #35b588;
+}
+
+.loginlist .appmenu dd .reg-btn,
+.loginlist .appmenu dd .login-btn {
+    width: 45%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center !important;
+    /*display: inline-block;*/
+}
+
+
+/*login end*/
+
+
+/*正文*/
+/*main导航栏左侧*/
+.content-wrap{
+    width: 1000px;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    clear: both;
+}
+
+.content-wrap .main{
+    width: 776px;
+    float: right;   
+}
+
+.mainNav{
+    position: relative;
+    z-index: 222;
+}
+.mainNav .mainNavWrap{
+    height: 38px;
+    background-color: #fff;
+    color: grey;
+    line-height: 38px;
+}
+.mainNav .mainNavWrap .navMode{
+    float: left;
+    height: 38px;
+    overflow: visible;
+}
+
+.mainNav .mainNavWrap .navMode h3{
+    float: left;
+    padding:0 21px;
+    background-color: #fff;
+    border-right: 1px solid #f5f5f5;
+    font-size: 12px; 
+    font-weight: 400;
+}
+.mainNav .mainNavWrap .navMode dl{
+    position: relative;
+    z-index: 10;
+    /*overflow: hidden;*/
+    float: left;
+    height: 36px;
+    margin: 0 1px 0 -1px;
+    white-space: nowrap;
+}
+.mainNav .mainNavWrap .navMode dl dt{
+    padding: 0 18px;
+    font-size: 12px;
+    cursor: default;
+}
+.mainNav .mainNavWrap .navMode dl dd{
+    position: relative;
+    display: none;
+    font-size: 12px;
+    padding: 0 18px;
+    background-color: #fff;
+}
+.mainNav .mainNavWrap .navMode dl dd a{
+    color: grey;
+    display: block;
+}
+/*main导航栏左侧结束*/
+/*main导航栏右侧*/
+.previewMode{
+    float: right;
+}
+.previewMode li {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 38px;
+    border-left: 1px solid #f5f5f5;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.previewMode .back{
+    background-color: #eee;
+    border:1px solid #fff;
+}
+
+.previewMode li .icon{
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.previewMode .blockIcon .icon{
+    width: 14px;
+    background: url(../img/icon-kuai.png) no-repeat 0 0;
+    background-size: 14px;
+}   
+
+.previewMode .listIcon .icon{
+    width: 19px;
+    background: url(../img/icon-list.png) no-repeat center;
+    background-size: 16px 12px;
+}
+/*main导航栏右侧结束*/
+/*lessonList*/
+.lessonList ul{
+    width: 790px;
+    margin-top: 15px;
+    /*display: none;*/
+}
+
+.lessonList ul li{
+    list-style: none;
+    height: 225px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    width: 250px;
+    float: left;
+}
+.lessonList .lessonImgBox{
+    position: relative;
+    width: 100%;
+    height: 135px;
+}
+.lessonList .lessonImgBox img{
+    width: 100%;
+    height: 135px;
+}
+
+.lessonList .lessonPlay{
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.lessonList .lessonPlay .playIcon{
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    left: 50%;
+    top: 50%;
+    display: block;
+    cursor: pointer;
+    background: url(../img/player_icon.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+
+.lessonList .lessonInfo{
+    height: 88px;
+    padding: 10px;
+    position: relative;
+    z-index: 200;
+    background-color: #fff;
+}
+.lessonList .lessonInfo .lessonInfo-h2{
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+.lessonList .lessonInfo .lessonInfo-h2 a{
+    color: #333;
+}
+.lessonList .lessonInfo p{
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: none;
+}
+.lessonList .lessonInfo .timeAndIcon{
+    font-size: 12px;
+    color: gray;
+    position: relative;
+}
+.lessonList .lessonInfo .timeAndIcon dl{
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+}
+.lessonList .lessonInfo .timeAndIcon dl dd{
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.lessonList .lessonInfo .timeAndIcon dl dd:nth-child(2){
+    float: right;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+.lessonList .lessonInfo .timeAndIcon .timeIcon{
+    background: url(../img/clock.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+.lessonList .lessonInfo .timeAndIcon em{
+    font-style: normal;
+}
+
+.lessonList .lessonInfo .timeAndIcon .lessonIconBox a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+.lessonList .lessonInfo .timeAndIcon .lessonIconBox a img{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.lessonList .lessonInfo .timeAndIcon .levelIcon{
+    background: url(../img/one-ji.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.lessonList .lessonInfo .timeAndIcon .hideDl{
+    display: none;
+}
+
+.lessonList ul li:hover .lessonPlay{
+    opacity: 1;
+}
+
+.lessonList ul li:hover .lessonInfo{
+    height: 175px;
+}
+
+.lessonList ul li:hover .lessonInfo p{
+    display: block;
+}
+
+.lessonList ul li:hover .lessonInfo .hideDl{
+    display: block;
+}
+/*lesson结束*/
+
+/*lessonList2*/
+.lessonList2 ul{
+    width: 776px;
+    margin-top: 15px;
+}
+
+.lessonList2 ul li{
+    height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px;
+    list-style: none;
+}
+.lessonList2 .lessonImgBox{
+    position: relative;
+    width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+}
+.lessonList2 .lessonImgBox img{
+    width: 185px;
+    height: 100px;
+}
+
+.lessonList2 .lessonPlay{
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.lessonList2 .lessonPlay .playIcon{
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    left: 50%;
+    top: 50%;
+    display: block;
+    cursor: pointer;
+    background: url(../img/player_icon.png) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+
+.lessonList2 .lessonInfo{
+    height: 88px;
+    position: relative;
+    width: 566px;
+    float: left;
+}
+.lessonList2 .lessonInfo .lessonInfo-h2{
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.lessonList2 .lessonInfo .lessonInfo-h2 a{
+    color: #333;
+}
+.lessonList2 .lessonInfo p{
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: block;
+    height: 36px;
+    opacity: 1 !important;
+}
+.lessonList2 .lessonInfo .timeAndIcon{
+    font-size: 12px;
+    color: gray;
+    position: relative;
+}
+.lessonList2 .lessonInfo .timeAndIcon dl{
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+}
+.lessonList2 .lessonInfo .timeAndIcon dl dd{
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.lessonList2 .lessonInfo .timeAndIcon dl dd:nth-child(2){
+    float: right;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+.lessonList2 .lessonInfo .timeAndIcon .timeIcon{
+    background: url(../img/clock.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+.lessonList2 .lessonInfo .timeAndIcon em{
+    font-style: normal;
+}
+
+.lessonList2 .lessonInfo .timeAndIcon .lessonIconBox a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+.lessonList2 .lessonInfo .timeAndIcon .lessonIconBox a img{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.lessonList2 .lessonInfo .timeAndIcon .levelIcon{
+    background: url(../img/one-ji.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.lessonList2 .lessonInfo .timeAndIcon .hideDl{
+    display: none;
+}
+
+.lessonList2 ul li:hover .lessonPlay{
+    opacity: 1;
+}
+
+/*lessonList2结束*/
+
+/*左边栏*/
+.lSide{
+    float: left;
+    width: 210px;
+}
+.lSide li{
+    list-style: none;
+}
+.lSide-course{
+    margin: 0;
+    border:1px solid #35b558;
+    background-color: #fff;
+}
+.lSide-course .lSide-tittle{
+    height: 45px;
+    padding: 0 32px;
+    border-bottom: 1px solid #eee;
+    line-height: 45px;
+    cursor: default;
+}
+.lSide-course .lSide-tittle h2{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+}
+.lSide-course .lSide-tittle h2 a{
+    color: #35b558;
+}
+.lSide-course .lSide-tittle .course-icon{
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 14px;
+    background: url(../img/icon-course.png) no-repeat 0 0;
+    background-size: 15px 15px;
+}
+.cList{
+    position: relative;
+    width: 208px;
+}
+.cList li{
+    padding: 0;
+    border-bottom: 0;
+}
+.cList li>div{
+    cursor: pointer;
+    width: 208px;
+    height: 37px;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 32px;
+    background: url(../img/icon-more.png) no-repeat 186px center;
+    background-size: 6px 10px;
+}
+.cList li>div a{
+    font-size: 12px;
+    color: #666;
+    line-height: 36px;
+}
+.cList li .list-show{
+    display: none;
+    overflow: hidden;
+    min-height: 417px;
+    min-width: 401px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    position: absolute;
+    left: 209px;
+    top: -45px;
+    z-index: 1001;
+    margin-left: -1px;
+    padding-bottom: 30px;
+    float: left;
+    width: 402px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.1);
+}
+.cList li .list-show dl{
+    overflow: hidden;
+    margin: 0 15px;
+}
+.cList li .list-show dt{
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    height: 37px;
+    line-height: 45px;
+}
+.cList li .list-show dt>a{
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+}
+.cList li .list-show dd{
+    margin-left: -8px;
+    padding: 3px 0;
+}
+.cList li .list-show dd a{
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding:0 7px;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    border-left: 1px solid #e0e0e0;
+    float: left;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.cList li>div:hover a{
+    color: #35b558;
+}
+.cList li>div:hover .list-show{
+    display: block;
+}
+.cList li>div:hover .list-show a{
+    color: #666;
+}
+.hdlist{
+    background-color: #fff;
+    width: 100%;
+}
+.hdlist li{
+    height: 45px;
+}
+.hdlist li a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    color: #333;
+    font-size: 14px;
+    padding-left: 10px;
+    border-bottom: 1px solid #eee;
+}
+.hdlist li a i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: text-bottom;
+}
+.hdlist li a .job-icon{
+    background: url(../img/icon-job.png) no-repeat left center;
+    background-size: 15px 14px;
+}
+.hdlist li a .know-icon{
+    background: url(../img/icon-know.png) no-repeat left center;
+    background-size: 15px 12.5px;
+}
+.hdlist li a .unit-icon{
+    background: url(../img/icon-unit.png) no-repeat left center;
+    background-size: 14px 14px;
+}
+.hdlist li a .memo-icon{
+    background: url(../img/icon-memo.png) no-repeat left center;
+    background-size: 15px 13px;
+}
+
+.hdlist li:hover{
+    background-color: #eee;
+}
+.hdlist li a:hover{
+    color: #35b558;
+}
+/*左边栏结束*/
+/*footer*/
+.footer{
+    min-width: 1000px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-top: 1px solid #e4e4e4;
+}
+.footer div,
+.footer p,
+.footer dd,
+.footer dl,
+.footer dt {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+.footer .footer-info-wrap{
+    background-color: #fff;
+}
+.footer .footer-info-wrap .footer-info{
+    position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    padding-left: 224px;
+    padding-top: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer .footer-info-wrap .footer-info .footer-logo{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+.footer .footer-info-wrap .footer-info .footer-logo img{
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+.footer .footer-info-wrap .footer-info .footer-logo p{
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+.footer .footer-info-wrap .footer-info dl{
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+.footer .footer-info-wrap .footer-info dl dt{
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer .footer-info-wrap .footer-info dl dd{
+    font-size: 12px;
+    line-height: 30px;
+}
+.footer .footer-info-wrap .footer-info dl dd a{
+    color: #999999;
+}
+.footer .footer-info-wrap .footer-info .contract{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 175px;
+    text-align: left;
+}
+.footer .footer-info-wrap .footer-info .contract p{
+    color: #808080;
+    font-size: 14px;
+}
+/*footer end*/
+/*copyright*/
+.footer .copyright{
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    padding: 15px 0;
+}
+/*copyright end*/
