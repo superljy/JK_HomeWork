@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    background-color: #ddd;
+    overflow: scroll;
+}
+
+
+/*首页父div*/
+
+.wrapper {
+    background: url(../img/bg_cat.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 900px;
+    min-height: 1000px;
+    border-radius: 10px;
+}
+
+
+/*header*/
+
+header .tittle {
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .line {
+    width: 900px;
+    height: 105px;
+    background: url(../img/line.jpg) no-repeat;
+}
+
+
+/*article*/
+
+article .main {
+    margin-top: 20px;
+}
+
+.web-pic img{
+    width: 850px;
+    padding-left: 25px;
+}
+

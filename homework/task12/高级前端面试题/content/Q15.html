@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="content.css">
+    <title>前端安全问题</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="tittle">
+                <h2>前端安全问题</h2>
+            </div>
+            <div class="line"></div>
+        </header>
+        <article>
+            <div class="main">
+                <div class="link">
+                    <div class="Q15">
+                        <span>
+                            CSRF：是跨站请求伪造，很明显根据刚刚的解释，他的核心也就是请求伪造，通过伪造身份提交POST和GET请求来进行跨域的攻击。
+                            <br>
+                                **完成CSRF需要两个步骤：**
+                                <br>
+                                1.登陆受信任的网站A，在本地生成COOKIE
+                                <br>
+                                2.在不登出A的情况下，或者本地COOKIE没有过期的情况下，访问危险网站B。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="copyright">
+                <a href="qHome.html"><img src="../img/back.png" width="100px" height="100px" alt="返回上一页">返回上一页</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
