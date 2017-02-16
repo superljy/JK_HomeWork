@@ -82,7 +82,7 @@ $(document).ready(function() {
         }
     });
 
-    // 修改新闻
+    // 新闻列表
     var updateId = null;
     $newsTable.on("click", ".btn-primary", function(e) {
         $("#updateModal").modal("show");
@@ -100,12 +100,14 @@ $(document).ready(function() {
                 $("#unewsimg").val(htmlspecialchars_decode(data[0].newsimg));
                 $("#unewssrc").val(htmlspecialchars_decode(data[0].newssrc));
                 // 获取到时间后用空格分开,取左半边的年月日部分
-                var uDate = htmlspecialchars_decode(data[0].newsdate.split("T")[0]);
+                var uDate = moment(data[0].newsdate).format("YYYY-MM-DD HH:mm:ss");
                 $("#unewsdate").val(uDate);
 
             }
         });
     });
+
+    //修改新闻
     $("#updateModal #confirmUpdate").click(function(e) {
         $.ajax({
             url: "/admin/update",
@@ -145,7 +147,7 @@ $(document).ready(function() {
                     var $tdtitle = $("<td>").html(item.newstitle);
                     var $tdimg = $("<td>").html(item.newsimg);
                     var $tdsrc = $("<td>").html(item.newssrc);
-                    var $tddate = $("<td>").html(item.newsdate);
+                    var $tddate = $("<td>").html(moment(item.newsdate).format("YYYY-MM-DD HH:mm:ss"));
                     var $tdctrl = $("<td>");
                     var $btnupdate = $("<button>").addClass("btn btn-primary btn-xs").html("编辑");
                     var $btndelete = $("<button>").addClass("btn btn-danger btn-xs").html("删除");
@@ -161,11 +163,19 @@ $(document).ready(function() {
 
 
 // 反转义函数
-function htmlspecialchars_decode(str) { 
-    str = str.replace(/&/g, '&');
-    str = str.replace(/</g, '<');
-    str = str.replace(/>/g, '>');
-    str = str.replace(/"/g, "''");
-    str = str.replace(/'/g, "'");
-    return str; 
+// function htmlspecialchars_decode(str) { 
+//     str = str.replace(/&/g, '&');
+//     str = str.replace(/</g, '<');
+//     str = str.replace(/>/g, '>');
+//     str = str.replace(/"/g, "''");
+//     str = str.replace(/'/g, "'");
+//     return str; 
+// }
+ function htmlspecialchars_decode(str){           
+    str = str.replace(/&amp;/g, '&'); 
+    str = str.replace(/&lt;/g, '<');
+    str = str.replace(/&gt;/g, '>');
+    str = str.replace(/&quot;/g, "''");  
+    str = str.replace(/&#039;/g, "'");  
+    return str;  
 }
